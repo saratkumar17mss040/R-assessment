@@ -1,6 +1,25 @@
 library(gdata)
-data = read.csv("D:\\Github_repos\\R-assessment\\beaver.csv", header = TRUE)
+library(dplyr)
+data = read.csv("D:\\Github_repos\\R-assessment\\studentsdetails.csv", header = TRUE)
 data
+str(data)
+nrow(data)
+colnames(data)
+value <- data[,1]
+print("Names")
+value
+result <- filter(data,PHYSICS >50)
+result
+nrow(result)
+
+
+
+
+
+
+
+
+
 is.na(data)
 na.pass(data)
 print("datasets which contains data")
@@ -12,8 +31,9 @@ summary(data)
 str(data)
 head(data,50)
 tail(data,50)
-nrow(data)
 # data2
 # data[c(100,4)]
 df <- data[, c(1:4)]
 df
+print('sarathkumar')
+print('17mss040')

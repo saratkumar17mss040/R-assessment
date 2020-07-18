@@ -1,0 +1,13 @@
+data("iris")
+sepalLength <- iris$Sepal.Length
+barplot(sepalLength)
+sepalWidth <- head(iris$Sepal.Width)
+sepalLength <- head(iris$Sepal.Length)
+petalLength <- head(iris$Petal.Length)
+petalWidth <- head(iris$Petal.Width)
+x <- c(sepalLength, sepalWidth, petalLength, petalWidth)
+labels <- c("sepalLength", "sepalWidth", "petalLength", "petalWidth")
+# hist(sepalLength)
+# plot(sepalLength , sepalWidth, type = "l") 
+# pie(x,labels,main = "iris pie chart",col=rainbow(length(x)))
+lines(sepalLength, sepalWidth, type = "l")
